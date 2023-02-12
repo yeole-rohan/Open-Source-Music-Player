@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ieid&zz^!10-@rw1vdo!@*wnccb367dw@v@ema%i8_)b9%6fvj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ravipython.pythonanywhere.com]
+ALLOWED_HOSTS = ['ravipython.pythonanywhere.com']
 
 
 # Application definition
