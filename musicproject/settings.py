@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ieid&zz^!10-@rw1vdo!@*wnccb367dw@v@ema%i8_)b9%6fvj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ravipython.pythonanywhere.com]
 
