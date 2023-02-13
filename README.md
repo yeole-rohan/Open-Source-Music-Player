@@ -2,6 +2,9 @@
 
 Hi All, Welcome to this open source project, This project is part of bringing or testing your skills to real world project. I have prepared this project to make you capable for your next job.
 
+Youtube Into Link, check out before you start working, this should give you idea what this project wnated to achive.
+https://youtu.be/UhgFfxcWBU4
+
 How to get started,
 
 1. Clone the repo
