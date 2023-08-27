@@ -18,7 +18,7 @@ def search_songs(request):
             Q(songName__icontains=search_query) | 
             Q(album__albumName__icontains=search_query) | 
             Q(album__artist__artistName__icontains=search_query)
-        )
+        ).distinct()
     else: 
         search_result = Song.objects.all()
         
