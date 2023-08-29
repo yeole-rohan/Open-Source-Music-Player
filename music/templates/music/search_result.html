@@ -1,13 +1,15 @@
 {% extends 'music/base.html' %}
 
-{% block title %}Search Result{% endblock title %}
+
+{% block title %}Search Results For {{search_query}} {% endblock title %}
+
 
 {% block content %}
 
         {% if search_result %}
         <div class="container mt-3">
                 <div class="search-header">
-                        <h3 style="text-align: center;" color="green">Search Results</h3>
+                        <h3 style="text-align: center;" >Search Results</h3>
                 </div>
                 {% for song in search_result %}
                 <div class="card mb-3">
