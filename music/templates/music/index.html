@@ -1,0 +1,42 @@
+{% extends 'music/base.html' %}
+
+{% block content %}
+
+
+      <div class="container mt-3">
+        {% for song in allSongs %}
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="{{song.songThumbnail.url}}" class="img-fluid rounded-start" alt="{{song.songName}}">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{song.songName}}</h5>
+                            <h6 class="card-title">Artist - {{song.album.artist.artistName}}</h6>
+                            <p class="card-text">From - {{song.album}}</p>
+                            <p class="card-text"><small class="text-muted">Last updated {{song.last_updated | timesince}} ago</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="play-button d-flex h-100 justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                            </svg>
+                        </div>
+                        <div class="audio-file d-none">
+                            <audio controls>
+                                <source src="{{song.song.url}}" type="audio/mpeg">
+                                Your browser does not support the audio tag.
+                              </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+      </div>
+
+{% endblock content %}
+
+
